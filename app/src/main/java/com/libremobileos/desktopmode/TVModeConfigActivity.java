@@ -11,7 +11,8 @@ public class TVModeConfigActivity extends CollapsingToolbarBaseActivity {
         if (savedInstanceState == null) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(com.android.settingslib.R.id.content_frame, new TVModeConfigFragment())
+                    .replace(com.android.settingslib.collapsingtoolbar.R.id.content_frame,
+                            new TVModeConfigFragment())
                     .commit();
         }
     }

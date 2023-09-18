@@ -14,7 +14,8 @@ public class PCModeConfigActivity extends CollapsingToolbarBaseActivity {
         if (savedInstanceState == null) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(com.android.settingslib.R.id.content_frame, new PCModeConfigFragment())
+                    .replace(com.android.settingslib.collapsingtoolbar.R.id.content_frame,
+                            new PCModeConfigFragment())
                     .commit();
         }
     }
