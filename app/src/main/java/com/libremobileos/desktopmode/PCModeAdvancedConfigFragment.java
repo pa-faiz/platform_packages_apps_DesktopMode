@@ -7,7 +7,7 @@ import android.os.Bundle;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
 
 public class PCModeAdvancedConfigFragment extends PreferenceFragmentCompat
         implements Preference.OnPreferenceChangeListener{
@@ -27,12 +27,12 @@ public class PCModeAdvancedConfigFragment extends PreferenceFragmentCompat
     protected Boolean mRemoteCursorValue;
     protected Boolean mClipboardValue;
 
-    protected SwitchPreference pcModeEmulateTouch;
-    protected SwitchPreference pcModeRelativeInput;
-    protected SwitchPreference pcModeMirrorInternal;
-    protected SwitchPreference pcModeAudio;
-    protected SwitchPreference pcModeRemoteCursor;
-    protected SwitchPreference pcModeClipboard;
+    protected SwitchPreferenceCompat pcModeEmulateTouch;
+    protected SwitchPreferenceCompat pcModeRelativeInput;
+    protected SwitchPreferenceCompat pcModeMirrorInternal;
+    protected SwitchPreferenceCompat pcModeAudio;
+    protected SwitchPreferenceCompat pcModeRemoteCursor;
+    protected SwitchPreferenceCompat pcModeClipboard;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {

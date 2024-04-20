@@ -7,7 +7,7 @@
         android:title="@string/pc_mode_intro" />
 
     <PreferenceCategory android:title="@string/resolution">
-        <SwitchPreference
+        <SwitchPreferenceCompat
             android:key="pc_mode_auto_resolution"
             android:defaultValue="true"
             android:title="@string/pc_mode_auto_res_title"

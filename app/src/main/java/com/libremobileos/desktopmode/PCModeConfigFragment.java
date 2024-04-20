@@ -8,7 +8,7 @@ import android.os.Bundle;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
 
 import com.libremobileos.desktopmode.preferences.ResolutionPreference;
 import com.libremobileos.desktopmode.preferences.SeekBarPreference;
@@ -32,7 +32,7 @@ public class PCModeConfigFragment extends PreferenceFragmentCompat implements
     protected Integer mCustomResHeightValue;
     protected Integer mScalingValue;
 
-    protected SwitchPreference pcModeAutoRes;
+    protected SwitchPreferenceCompat pcModeAutoRes;
     protected ResolutionPreference pcModeRes;
     protected SeekBarPreference pcModeScaling;
     protected Preference pcModeServiceButton;
