@@ -37,7 +37,10 @@ android_app {
         "com.google.android.material_material",
         "VncFlinger_aidl-java",
     ],
-    required: ["privapp_whitelist_com.libremobileos.desktopmode.xml"],
+    required: [
+                "privapp_whitelist_com.libremobileos.desktopmode.xml",
+                "default-permissions_com.libremobileos.desktopmode",
+    ],
 }
 
 prebuilt_etc {
@@ -46,4 +49,12 @@ prebuilt_etc {
     system_ext_specific: true,
     src: "privapp_whitelist_com.libremobileos.desktopmode.xml",
     sub_dir: "permissions",
+}
+
+prebuilt_etc {
+    name: "default-permissions_com.libremobileos.desktopmode",
+    system_ext_specific: true,
+    sub_dir: "default-permissions",
+    src: "default-permissions_com.libremobileos.desktopmode.xml",
+    filename_from_src: true,
 }
